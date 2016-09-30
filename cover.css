@@ -5,8 +5,18 @@
 /* Links */
 a,
 a:focus,
-a:hover {
-  color: #000000;
+a:hover {background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #FF00C4),
+  color-stop(1, #FFEE00)
+);
+background-image: -o-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
+background-image: -moz-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
+background-image: -webkit-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
+background-image: -ms-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
+background-image: linear-gradient(to bottom, #FF00C4 0%, #FFEE00 100%);
 }
 
 /* Custom default button */
@@ -27,18 +37,18 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: -webkit-gradient(
+background-image: -webkit-gradient(
   linear,
   left top,
   left bottom,
-  color-stop(0, #FFEE00),
-  color-stop(1, #FF00C4)
+  color-stop(0, #FF00C4),
+  color-stop(1, #FFEE00)
 );
-background-image: -o-linear-gradient(bottom, #FFEE00 0%, #FF00C4 100%);
-background-image: -moz-linear-gradient(bottom, #FFEE00 0%, #FF00C4 100%);
-background-image: -webkit-linear-gradient(bottom, #FFEE00 0%, #FF00C4 100%);
-background-image: -ms-linear-gradient(bottom, #FFEE00 0%, #FF00C4 100%);
-background-image: linear-gradient(to bottom, #FFEE00 0%, #FF00C4 100%);
+background-image: -o-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
+background-image: -moz-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
+background-image: -webkit-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
+background-image: -ms-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
+background-image: linear-gradient(to bottom, #FF00C4 0%, #FFEE00 100%);
 }
 body {
   color: #fff;
