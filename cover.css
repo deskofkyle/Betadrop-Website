@@ -27,7 +27,18 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #FFEE00),
+  color-stop(1, #FF00C4)
+);
+background-image: -o-linear-gradient(bottom, #FFEE00 0%, #FF00C4 100%);
+background-image: -moz-linear-gradient(bottom, #FFEE00 0%, #FF00C4 100%);
+background-image: -webkit-linear-gradient(bottom, #FFEE00 0%, #FF00C4 100%);
+background-image: -ms-linear-gradient(bottom, #FFEE00 0%, #FF00C4 100%);
+background-image: linear-gradient(to bottom, #FFEE00 0%, #FF00C4 100%);
 }
 body {
   color: #fff;
