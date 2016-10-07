@@ -48,7 +48,6 @@
     console.log(id);
 
     function startMyApp() {
-      isSiteOnline();
       isSiteOnline('Betadrop-DeepLink://id/' + id, function(found){
       if(found) {
         document.location.replace('Betadrop-DeepLink://id/' + id);
@@ -58,7 +57,13 @@
           document.location = 'https://itunes.apple.com/app/cheapo-casino-free-casino/id637522371?ls=1&mt=8';
         }
       }
-})
+    })
+
+    function isSiteOnline(url,callback) {
+      var timer = setTimeout(function(){
+        callback(false);
+      },5000)
+}
     }  
   </script>
 </html>
