@@ -48,6 +48,7 @@
     console.log(id);
 
     function startMyApp() {
+      isSiteOnline();
       isSiteOnline('Betadrop-DeepLink://id/' + id, function(found){
       if(found) {
         document.location.replace('Betadrop-DeepLink://id/' + id);
