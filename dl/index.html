@@ -48,13 +48,16 @@
     console.log(id);
 
     function startMyApp() {
-      setTimeout( function() {
+      isSiteOnline('Betadrop-DeepLink://id/' + id, function(found){
+      if(found) {
+        document.location.replace('Betadrop-DeepLink://id/' + id);
+      }
+      else {
         if(confirm( 'You do not seem to have Betadrop installed, do you want to go download it now?')) {
           document.location = 'https://itunes.apple.com/app/cheapo-casino-free-casino/id637522371?ls=1&mt=8';
-        } else {
-          document.location.replace('Betadrop-DeepLink://id/' + id);
         }
-      }, 300);
+      }
+})
     }  
   </script>
 </html>
