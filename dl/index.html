@@ -17,7 +17,7 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
       <img style="margin-top:15px;" src="Screenshot-1.png">
-      <input style="padding:20px;" type="image" href="Betadrop-DeepLink://artcle/A" src="Open-Button.png"/>
+      <input style="padding:20px;" id="open" type="image" src="Open-Button.png"/>
       </div>
     </div>
 
@@ -45,8 +45,12 @@
     }
 
     var id = getParameterByName('id');
-    console.log(id);    
+    console.log(id);
+
+    $(document).ready(function(){
+    $('#open').click(function(){
+       location.replace('Betadrop-DeepLink://artcle/' + id);
+    });
+  });    
   </script>
 </html>
-
-<!--- <a href="Betadrop-DeepLink://artcle/A">Betadrop-DeepLink://article/A</a>>
