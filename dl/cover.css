@@ -49,6 +49,8 @@ background-image: -moz-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
 background-image: -webkit-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
 background-image: -ms-linear-gradient(bottom, #FF00C4 0%, #FFEE00 100%);
 background-image: linear-gradient(to bottom, #FF00C4 0%, #FFEE00 100%);
+  background-attachment: fixed;
+
 }
 body {
   color: #fff;
